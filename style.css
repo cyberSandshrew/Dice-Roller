@@ -1,0 +1,189 @@
+/* Programming Challenge
+            Programming Challenge
+            On Your Own:    ch. 7
+            Description:
+			Create a page that allows the user to play a game with the computer. In this game, 
+			the player will roll two dice and the computer will roll two dice. The Math.random() method will be used to generate each roll of a die, 
+			from 1 to 6. The sum of the computer’s roll should be compared to the sum of the player’s roll and whoever has the greater sum is the winner of 
+			that round. The sum of the winner’s roll for that round should be added to his or her point total. 
+			Use functions to call for each roll of two dice and the sum, for keeping track of the points, and to allow the player to continue or quit 
+			after a round of play. The following are the game rules: n If one player rolls doubles (i.e., two fours or two sixes, etc.) 
+			and is a winner for that round, he or she should get double points. n If one player rolls doubles but is not a winner, nothing special happens.
+			n If the two sums for any round are a tie, no one gets any points.
+			n The game ends when either player reaches at least 100 points or when the human player wants to quit. 
+			Save your page as dice.html and be sure to include an appropriate page title.
+                        
+            Created by: Jerry French  
+						csc240
+            Created on: 4/11/2022,
+*/
+/* CSS reset */
+/* make sure all browsers run code the same */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td,figure,figcaption { 
+    margin:0;
+    padding:0;
+}
+html,body {
+    margin:0;
+    padding:0;
+}
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+fieldset,img { 
+    border:0;
+}
+input{									/* CSS reset */
+    border:1px solid #b0b0b0;
+    padding:3px 5px 4px;
+    color:#979797;
+    width:190px;
+}
+address,caption,cite,code,dfn,th,var {
+    font-style:normal;
+    font-weight:normal;
+}
+ol,ul {
+    list-style:none;
+}
+caption,th {
+    text-align:left;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-size:100%;
+    font-weight:normal;
+}
+q:before,q:after {
+    content:'';
+}
+abbr,acronym { border:0;
+}
+
+/* style rules for mobile */
+
+
+/*Body Graphics*/
+body {
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(217, 217, 217,1), rgba(191, 191, 191,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+/*text*/
+	text-align: center;
+	color: rgb(0, 0, 77);
+	font-family: Courgette, sans-serif, ariel;
+	font-size: 100%
+}
+
+
+/* header display */
+
+	/*header always visable and moves with scoll*/
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	height: auto;
+	width: auto;
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(172, 198, 210,1), rgba(0,0,0,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	
+	font-family: Roboto, sans-serif, ariel;
+	font-size: 1.5em;
+	
+	padding-top: 5%;
+	padding-right: 10%;
+	padding-bottom: 5%;
+	padding-left: 10%;
+	
+	margin: 1%;
+	
+	border-radius: 90%;
+}
+
+
+
+button {
+  border-style: single;
+  background-color: #e7d9fc;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  }
+
+
+
+/* changes header */
+h1 {
+    font-size: 140%;
+	color: blue;
+}
+
+h2{
+	font-size: 120%;
+	color: red;
+}
+
+.dice{
+	border-style: double;
+	border-width: 12px;
+	border-radius: 25px;
+
+}
+
+/* main content display */
+
+center{
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(172, 198, 210,1), rgba(0,0,0,0.5));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	border-radius: 25px;
+	
+	font-size: 100%;
+	
+	
+	padding-top: 2%;
+	padding-right: 3%;
+	padding-bottom: 2%;
+	padding-left: 3%;
+	
+	
+	margin: 0 auto;
+}
+
+
+/* footer display */
+footer{
+
+	/* background image */
+	background-image: linear-gradient(to bottom, rgba(210, 172, 172,1), rgba(172, 210, 172,1));
+	background-repeat: no-repeat;
+	background-position: right top;
+	background-attachment: fixed;
+	
+	border-style: double;
+	border-width: 12px;
+	
+	float: bottom;	
+}
+
+
+
+	
